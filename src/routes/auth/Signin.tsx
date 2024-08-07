@@ -14,9 +14,6 @@ const navigate = useNavigate()
       });
     },
     onSuccess: () => {
-    //   qc.invalidateQueries({
-    //     queryKey: ["user"],
-    //   });
     qc.setQueryData(["user"], { user: "hello" });
       navigate("/")
     },
